@@ -1,35 +1,35 @@
-<!-- هذا الملف لروابط التنقل -->
+<!-- لروابط التنقل -->
 <template>
-  <ul class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
-    <li>
-      <router-link
-        to="/"
-        @click="$emit('linkClicked')"
-        class="me-4 hover:text-yellow-300"
-      >الرئيسية</router-link>
-    </li>
-    <li>
-      <router-link
-        to="/about"
-        @click="$emit('linkClicked')"
-        class="p-4 me-4 hover:text-yellow-300"
-      >من نحن</router-link>
-    </li>
-    <li>
-      <router-link
-        to="/work"
-        @click="$emit('linkClicked')"
-        class="p-4 me-4 hover:text-yellow-300"
-      >عملنا</router-link>
-    </li>
-    <li>
-      <router-link
-        to="/donate"
-        @click="$emit('linkClicked')"
-        class="p-4 me-4 hover:text-yellow-300"
-      >تبرع الان</router-link>
-    </li>
-  </ul>
+    <ul class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
+        <li>
+            <router-link
+                to="/"
+                @click="$emit('linkClicked')"
+                class="me-4 hover:text-yellow-300"
+            >الرئيسية</router-link>
+        </li>
+        <li>
+            <router-link
+                to="/about"
+                @click="$emit('linkClicked')"
+                class="p-4 me-4 hover:text-yellow-300"
+            >من نحن</router-link>
+        </li>
+        <li>
+            <router-link
+                to="/work"
+                @click="$emit('linkClicked')"
+                class="p-4 me-4 hover:text-yellow-300"
+            >عملنا</router-link>
+        </li>
+        <li>
+            <router-link
+                to="/donate"
+                @click="$emit('linkClicked')"
+                class="p-4 me-4 hover:text-yellow-300"
+            >تبرع الان</router-link>
+        </li>
+    </ul>
 </template>
 
 

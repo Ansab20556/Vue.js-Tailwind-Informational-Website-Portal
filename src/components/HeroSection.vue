@@ -1,4 +1,4 @@
-<!-- HeroSection.vue -->
+<!-- قسم الهيرو -->
 <template>
     <section class="relative w-full max-h-[500px] overflow-hidden">
         <img :src="background" alt="صورة رئيسية" class="w-full object-cover" />

@@ -1,4 +1,4 @@
-<!-- components/ArticleCard.vue -->
+<!-- كرت المقالات -->
 <template>
     <a :href="link"
         class="bg-white rounded shadow hover:-translate-y-1 duration-300 dark:bg-gray-800">
