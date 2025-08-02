@@ -8,7 +8,6 @@
         >
         ☰
         </button>
-
         <!-- القائمة الجانبية -->
         <Sidebar 
         :isOpen="sidebarOpen"
@@ -28,27 +27,43 @@ import { ref, computed } from 'vue'
 import Sidebar from '../components/Sidebar.vue'
 import MessagesTable from '../components/MessagesTable.vue'
 import DashboardHome from '@/components/DashboardHome.vue'
+import ArticlesManager from '../components/DonationsChart.vue'
+import DashboardWork from '@/components/DashboardWork.vue';
+import DonationsTable from '@/components/DonationsTable.vue'
+import Settings from '@/components/Settings.vue'
+
+
+
+// الأقسام الإضافية (مبدئيًا Placeholder)
+const EventsSection = { template: `<div class="text-center mt-10 text-gray-600">قسم الفعاليات / الخدمات تحت الإنشاء...</div>` }
+const UsersSection = { template: `<div class="text-center mt-10 text-gray-600">إدارة المستخدمين (اختياري) تحت الإنشاء...</div>` }
 
 const sidebarOpen = ref(false)
-const section = ref('messages')
+const section = ref('dashboardhome')
 
 function navigate(target) {
     section.value = target
-    sidebarOpen.value = false // إغلاق القائمة عند الضغط على عنصر
+    sidebarOpen.value = false
 }
 
 const currentComponent = computed(() => {
     switch (section.value) {
         case 'dashboardhome':
-        return DashboardHome
+            return DashboardHome
         case 'messages':
-        return MessagesTable
+            return MessagesTable
+        case 'projects':
+            return DashboardWork
+        case 'news':
+            return DonationsTable
+        case 'events':
+            return EventsSection
         case 'settings':
-        return {
-            template: `<div class="text-center text-gray-600 mt-10">قسم الإعدادات تحت الإنشاء...</div>`
-        }
+            return Settings
+        case 'users':
+            return UsersSection
         default:
-        return MessagesTable
+            return DashboardHome
     }
 })
 </script>
