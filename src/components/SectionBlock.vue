@@ -1,3 +1,4 @@
+<!-- الاقسام الموجوده في صفحة من نحن وفي صفحة عملنا  -->
 <template>
   <section :id="id" class="mb-12 bg-white p-6 rounded-xl shadow-md text-gray-900 leading-relaxed">
     <h2 class="text-2xl font-bold text-blue-700 mb-4">{{ title }}</h2>
