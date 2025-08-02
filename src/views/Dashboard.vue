@@ -27,16 +27,11 @@ import { ref, computed } from 'vue'
 import Sidebar from '../components/Sidebar.vue'
 import MessagesTable from '../components/MessagesTable.vue'
 import DashboardHome from '@/components/DashboardHome.vue'
-import ArticlesManager from '../components/DonationsChart.vue'
 import DashboardWork from '@/components/DashboardWork.vue';
 import DonationsTable from '@/components/DonationsTable.vue'
 import Settings from '@/components/Settings.vue'
 
 
-
-// الأقسام الإضافية (مبدئيًا Placeholder)
-const EventsSection = { template: `<div class="text-center mt-10 text-gray-600">قسم الفعاليات / الخدمات تحت الإنشاء...</div>` }
-const UsersSection = { template: `<div class="text-center mt-10 text-gray-600">إدارة المستخدمين (اختياري) تحت الإنشاء...</div>` }
 
 const sidebarOpen = ref(false)
 const section = ref('dashboardhome')

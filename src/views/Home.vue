@@ -1,7 +1,7 @@
 <template>
     <HeroSection
         :background="heroImage"
-        title='<mark class="bg-yellow-200 text-black">تقرير للأمم المتحدة </mark> تفاقم الجوع في 13 بؤرة ساخنة..<br /> وخطر الموت جوعاً يهدد خمساً منها'
+        title='<mark class="bg-yellow-200 text-black dark:bg-amber-700 dark:text-white">تقرير للأمم المتحدة </mark> تفاقم الجوع في 13 بؤرة ساخنة..<br /> وخطر الموت جوعاً يهدد خمساً منها'
         :buttons="[
         { text: 'تبرع الآن', href: '/donate' },
         { text: 'اقرأ المزيد', href: '#' }
