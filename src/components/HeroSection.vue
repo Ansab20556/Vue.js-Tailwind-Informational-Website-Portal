@@ -1,11 +1,11 @@
 <!-- قسم الهيرو -->
 <template>
-    <section class="relative w-full max-h-[500px] overflow-hidden">
-        <img :src="background" alt="صورة رئيسية" class="w-full object-cover" />
+    <section class="relative w-full max-h-[550px] overflow-hidden">
+        <img :src="background" alt="صورة رئيسية" class="w-full" />
         
         <div class="absolute top-1/2 right-6 text-white text-right">
             <h1 class="text-sm md:text-2xl font-bold mt-40" v-html="title"></h1>
-            
+            <br/>
             <div class="flex flex-wrap gap-3">
                 <a
                 v-for="(btn, index) in buttons"

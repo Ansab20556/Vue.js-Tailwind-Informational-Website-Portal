@@ -1,6 +1,6 @@
 <!-- ملف الهيدر الرئيسي -->
 <template>
-    <header class="text-white top-0 z-50">
+    <header class="text-white top-0 z-50 dark:bg-gray-900 dark:text-white">
         <nav class="bg-[#007dbc] p-4 flex flex-wrap items-center justify-between">
             <div class="flex items-center justify-between w-full md:w-auto">
                 <Logo />
