@@ -1,6 +1,7 @@
+<!-- القائمة الموجوده في لوحة التحكم  -->
 <template>
   <aside
-    class="fixed md:static top-0 right-0 z-50 bg-gray-800 text-white w-64 h-[600px] p-6 transition-transform duration-300"
+    class="fixed md:static top-0 right-0 z-50 bg-gray-800 text-white dark:bg-gray-100 dark:text-gray-800 w-64 h-[600px] p-6 transition-transform duration-300"
     :class="{ 'translate-x-full md:translate-x-0': !isOpen }"
   >
     <!-- رأس القائمة للجوال -->
@@ -34,4 +35,5 @@ function handleLogout() {
     alert('تم تسجيل الخروج')
     router.push('/')
 }
+
 </script>
