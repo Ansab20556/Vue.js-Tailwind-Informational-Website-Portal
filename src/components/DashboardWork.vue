@@ -52,18 +52,18 @@ function addField() {
 }
 
 function deleteField(index) {
-  fields.value.splice(index, 1);
+    fields.value.splice(index, 1);
 }
 
 function editField(index) {
-  const updated = prompt("تعديل مجال العمل:", fields.value[index]);
-  if (updated !== null) {
-    fields.value[index] = updated;
-  }
+    const updated = prompt("تعديل مجال العمل:", fields.value[index]);
+    if (updated !== null) {
+        fields.value[index] = updated;
+    }
 }
 function deleteAllProjects() {
-  localStorage.removeItem("workFields")
-  alert("تم حذف جميع المشاريع بنجاح")
-  location.reload()
+    localStorage.removeItem("workFields")
+    alert("تم حذف جميع المشاريع بنجاح")
+    location.reload()
 }
 </script>

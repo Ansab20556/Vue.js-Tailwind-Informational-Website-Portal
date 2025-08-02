@@ -1,4 +1,4 @@
-<!-- components/WorkList.vue -->
+<!-- قائمة المشاريع -->
 <template>
   <div>
     <input
@@ -28,7 +28,7 @@ onMounted(() => {
 
 const filteredFields = computed(() =>
   fields.value.filter(field =>
-    field.toLowerCase().includes(searchQuery.value.toLowerCase())
+    field.toLowerCase().includes(searchQuery.value)
   )
 );
 </script>

@@ -37,7 +37,6 @@ import DonationsTypeChart from './DonationsTypeChart.vue'
 
 
 const messageCount = ref(0)
-const visitorCount = ref(0)
 const donationCount = ref(0)
 const projectsCount = ref(0)
 const donations = ref([])
@@ -48,17 +47,15 @@ onMounted(() => {
   const messages = JSON.parse(localStorage.getItem("contactMessages") || "[]")
   messageCount.value = messages.length
 
-  // عدد الزوار (مثال: نزيد العدد كل مرة يدخل فيها المستخدم الصفحة)
-  const visits = parseInt(localStorage.getItem("visitorCount") || "0")
-  visitorCount.value = visits
-
   // عدد التبرعات (نفرض أنك تحفظ كل تبرع بنفس الطريقة)
   const donations = JSON.parse(localStorage.getItem("donations") || "[]")
   donationCount.value = donations.length
 
+  // عدد المشاريع 
 const projects = JSON.parse(localStorage.getItem("workFields") || "[]")
   projectsCount.value = projects.length
 
+  // مجموع التبرعات 
 donations.value = JSON.parse(localStorage.getItem('donations') || '[]')
 
 totalAmount.value = donations.value.reduce((sum, d) => sum + Number(d.amount), 0)
