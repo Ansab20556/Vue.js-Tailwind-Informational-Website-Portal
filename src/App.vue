@@ -1,6 +1,7 @@
 <script setup>
 import { useRoute } from 'vue-router'
 import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
 const route = useRoute()
 </script>
 
@@ -13,4 +14,8 @@ const route = useRoute()
     
     <router-view />
   </div>
+
+      <Footer v-if="route.path !== '/dashboard'"  />
+  
+
 </template>
