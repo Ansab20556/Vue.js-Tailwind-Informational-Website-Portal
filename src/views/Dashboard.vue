@@ -3,7 +3,7 @@
     <div class="flex flex-col md:flex-row min-h-screen relative">
         <!-- زر القائمة (للجوال فقط) -->
         <button
-        class="md:hidden px-1 text-2xl fixed top-2 right-2 z-50 bg-gray-800 text-white rounded shadow"
+        class="md:hidden px-1 text-2xl fixed top-2 right-2 z-50 bg-gray-800 text-white rounded shadow hover:cursor-pointer"
         @click="sidebarOpen = true"
         >
         ☰

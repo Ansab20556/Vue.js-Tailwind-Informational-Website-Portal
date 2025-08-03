@@ -1,13 +1,9 @@
 <!-- القائمة الموجوده في لوحة التحكم  -->
 <template>
   <aside
-  :class="[
-    theme === 'dark' ? 'dark' : 'light',
-    { 'translate-x-full md:translate-x-0': !isOpen },
-    'fixed md:static top-0 right-0 z-50 text-white dark:bg-gray-100 dark:text-gray-800 w-64 h-[600px] p-6 transition-transform duration-300'
-  ]"
->
-
+    class="fixed md:static top-0 right-0 z-50 bg-gray-800 text-white w-64 h-[600px] p-6 transition-transform duration-300"
+    :class="{ 'translate-x-full md:translate-x-0': !isOpen }"
+  >
     <!-- رأس القائمة للجوال -->
     <div class="flex justify-between items-center mb-6 md:hidden">
       <h2 class="text-xl font-bold">القائمة</h2>
@@ -54,15 +50,8 @@ function handleLogout() {
     router.push('/')
 }
 
+defineProps(['isOpen'])
+
 
 </script>
-<style>
-/* الوضع الداكن */
-.light{
-  background-color: #007dbc;
-}
-.dark {
-  background-color: #1f2937;
-  color: #f9fafb; 
-}
-</style>
+

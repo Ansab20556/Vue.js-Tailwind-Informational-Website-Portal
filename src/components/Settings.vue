@@ -26,7 +26,7 @@ function applyTheme() {
 function toggleTheme() {
   theme.value = theme.value === 'light' ? 'dark' : 'light'
   applyTheme()
-  location.reload()
+  // location.reload()
 }
 
 onMounted(() => {
